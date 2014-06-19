@@ -1,5 +1,10 @@
 package org.shell
 {
+	import org.shell.view.WidgetHolderView;
+	import org.shell.view.WidgetHolderViewMediator;
+	import org.shell.view.WidgetView;
+	import org.shell.view.WidgetViewMediator;
+	
 	import robotlegs.bender.extensions.eventCommandMap.api.IEventCommandMap;
 	import robotlegs.bender.extensions.mediatorMap.api.IMediatorMap;
 	import robotlegs.bender.framework.api.IConfig;
@@ -33,6 +38,8 @@ package org.shell
 //			mediatorMap.map(ButtonContainer).toMediator(ButtonContainerMediator);
 //			mediatorMap.map(TextContainer).toMediator(TextContainerMediator);
 //			mediatorMap.map(ScrollbarContainer).toMediator(ScrollbarContainerMediator);
+			mediatorMap.map(WidgetHolderView).toMediator(WidgetHolderViewMediator);
+			mediatorMap.map(WidgetView).toMediator(WidgetViewMediator);
 		}
 	}
 }

@@ -8,11 +8,13 @@ package org.shell.events
 	{
 		public function WidgetModelEvent()
 		{
-			public static const WIDGET_MODULE_ERROR:String = 'WIDGET_MODULE_ERROR';
-			public static const WIDGET_MODULE_PROGRESS:String = 'WIDGET_MODULE_PROGRESS';
-			public static const WIDGET_MODULE_READY:String = 'WIDGET_MODULE_READY';
+			public static const WIDGET_MODULE_ERROR:String = "WIDGET_MODULE_ERROR";
+			public static const WIDGET_MODULE_PROGRESS:String = "WIDGET_MODULE_PROGRESS";
+			public static const WIDGET_MODULE_READY:String = "WIDGET_MODULE_READY";
 			
-			public static const WIDGET_CREATED:String = 'WIDGET_CREATED';
+			public static const WIDGET_CREATED:String = "WIDGET_CREATED";
+			
+			public static const ENUM_1:int = 1;
 			
 			protected var _widgetId:String;
 			protected var _body:*;
