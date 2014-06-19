@@ -16,7 +16,8 @@ package org.shell.view
 		
 		public function onViewClick(event:MouseEvent):void
 		{
-			trace("MouseEvent : " + event)
+			trace("Inside WidgetViewMediator - onViewClick")
+			trace("	MouseEvent : " + event)
 		}
 	}
 }
