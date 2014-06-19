@@ -22,9 +22,8 @@ package org.shell.view
 			trace("	MouseEvent : " + event)
 			var newWidget:WidgetView = new WidgetView;
 			newWidget.flipColor();
+			newWidget.setTitle("Some new Widget");
 			view.addElement(newWidget);
-			
-			
 		}
 	}
 }

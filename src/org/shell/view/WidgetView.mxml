@@ -12,15 +12,25 @@
 		<![CDATA[
 			
 			//colorCanvas.alpha = 
-		public function flipColor():void
-		{
-			var max:int = 0xFFFFFF;
-			var min:int = 0X111111;
-			stroke.color =  min + Math.random()*(max - min);
-			fill.color = stroke.color;
-		//colorCanvas.setStyle('backgroundColor', col);
-		//colorCanvas.setStyle('borderColor', col);
-		}
+			public function flipColor():void
+			{
+				var max:int = 0xFFFFFF;
+				var min:int = 0X111111;
+				setColor(min + Math.random()*(max - min));
+			//colorCanvas.setStyle('backgroundColor', col);
+			//colorCanvas.setStyle('borderColor', col);
+			}
+			
+			public function setColor(color:int):void
+			{
+				stroke.color = color;
+				fill.color = color;
+			}
+			
+			public function setTitle(path:String):void
+			{
+				title.text = path;
+			}
 		]]>
 	</fx:Script>
 	
@@ -45,11 +55,11 @@
 	</s:Rect>
 	
 	<s:VGroup 	horizontalAlign="center"
-				paddingBottom="6"
-				paddingLeft="6"
-				paddingRight="6"
-				paddingTop="6">
+				verticalAlign="middle"
+				width="100%"
+				height="100%">
 		<s:Label id="title"
+				 textAlign="center"
 				 paddingBottom="0"
 				 paddingLeft="0"
 				 paddingRight="0"
@@ -58,8 +68,7 @@
 		<s:Button id="killButton"
 				  label="close"
 				  fontSize="10"
-				  width="100%"/>
+				  width="100"/>
 	</s:VGroup>
-	
 	
 </s:Group>
