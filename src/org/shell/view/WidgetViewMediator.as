@@ -9,7 +9,7 @@ package org.shell.view
 	public class WidgetViewMediator extends Mediator
 	{
 		[Inject]
-		public var view:WidgetView;
+		public var view:ParentWidgetView;
 		
 		override public function initialize():void
 		{
@@ -20,7 +20,7 @@ package org.shell.view
 		
 		public function onViewClick(event:MouseEvent):void
 		{
-			trace("Inside WidgetViewMediator - onViewClick")
+			trace("Inside ParentWidgetViewMediator - onViewClick")
 			trace("	MouseEvent : " + event)
 		}
 		

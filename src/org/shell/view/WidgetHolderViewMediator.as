@@ -20,9 +20,12 @@ package org.shell.view
 		{
 			trace("Inside WidgetHolderViewMediator - onViewClick")
 			trace("	MouseEvent : " + event)
-			var newWidget:WidgetView = new WidgetView;
+			var newWidget:ParentWidgetView = new ParentWidgetView;
 			newWidget.flipColor();
 			newWidget.setTitle("Some new Widget");
+			newWidget.vGroup.addElement(new ChildWidgetView);
+			newWidget.vGroup.addElement(new ChildWidgetView);
+			newWidget.vGroup.addElement(new ChildWidgetView);
 			view.addElement(newWidget);
 		}
 	}

@@ -18,7 +18,9 @@
     <application path="TestRL2Project.mxml"/>
   </applications>
   <modules>
-    <module application="src/TestRL2Project.mxml" destPath="org/shell/view/WidgetView.swf" optimize="true" sourcePath="src/org/shell/view/WidgetView.mxml"/>
+    <module application="src/TestRL2Project.mxml" destPath="org/shell/view/ParentWidgetView.swf" optimize="true" sourcePath="src/org/shell/view/ParentWidgetView.mxml"/>
+    <module application="src/TestRL2Project.mxml" destPath="org/shell/view/ChildWidgetView.swf" optimize="true" sourcePath="src/org/shell/view/ChildWidgetView.mxml"/>
+    <module application="src/TestRL2Project.mxml" destPath="org/shell/view/WidgetShelfView.swf" optimize="true" sourcePath="src/org/shell/view/WidgetShelfView.mxml"/>
   </modules>
   <workers/>
   <buildCSSFiles/>

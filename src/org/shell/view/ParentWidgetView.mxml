@@ -3,10 +3,7 @@
 		  xmlns:s="library://ns.adobe.com/flex/spark" 
 		  xmlns:mx="library://ns.adobe.com/flex/mx"
 		  width="100%"
-		  height="84"
-		  color="#433b3b"
-		  fontWeight="bold"
-		  fontSize="10">
+		  height="400">
 	
 	<fx:Script>
 		<![CDATA[
@@ -14,8 +11,8 @@
 			//colorCanvas.alpha = 
 			public function flipColor():void
 			{
-				var max:int = 0xFFFFFF;
-				var min:int = 0X111111;
+				var max:int = 0xCCCCCC;
+				var min:int = 0X000000;
 				setColor(min + Math.random()*(max - min));
 			//colorCanvas.setStyle('backgroundColor', col);
 			//colorCanvas.setStyle('borderColor', col);
@@ -35,13 +32,12 @@
 	</fx:Script>
 	
 	<s:filters>
-		<!-- For good measure ;) -->
-		<s:DropShadowFilter color="#000000" strength="0.4" blurX="5" blurY="5" distance="2" angle="90"/>
+		<s:DropShadowFilter color="#000000" strength="1" blurX="5" blurY="5" distance="2" angle="90"/>
 	</s:filters>
 	
+	<!-- Fills the background with a rectangle-->
 	<s:Rect height="100%" 
 			width="100%" 
-			top="1" 
 			id="colorCanvas">
 		<s:stroke>
 			<s:SolidColorStroke id="stroke" 
@@ -54,21 +50,40 @@
 		</s:fill>
 	</s:Rect>
 	
-	<s:VGroup 	horizontalAlign="center"
-				verticalAlign="middle"
-				width="100%"
-				height="100%">
+	<s:VGroup id="vGroup"
+			  horizontalAlign="center"
+			  verticalAlign="middle"
+			  width="100%"
+			  height="100%">
+		
 		<s:Label id="title"
-				 textAlign="center"
+				 color="0xFFFFFF"
+				 fontFamily="Arial"
+				 fontLookup="embeddedCFF"
+				 fontSize="12"
+				 fontStyle="normal"
+				 fontWeight="normal"
 				 paddingBottom="0"
 				 paddingLeft="0"
 				 paddingRight="0"
-				 paddingTop="0"/>
+				 paddingTop="0"
+				 renderingMode="cff"
+				 textAlign="start"
+				 textAlignLast="start"
+				 textAlpha="1"
+				 textJustify="interWord"
+				 trackingLeft="0"
+				 trackingRight="00"
+				 typographicCase="default"
+				 verticalAlign="middle"/>
 		
+		<!--
 		<s:Button id="killButton"
-				  label="close"
+				  label="Some ohter label"
 				  fontSize="10"
-				  width="100"/>
+				  width="100"
+				  height="100%"/>
+		-->
 	</s:VGroup>
 	
 </s:Group>
