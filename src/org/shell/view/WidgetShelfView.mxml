@@ -24,4 +24,19 @@
 						  alpha="1"/>
 		</s:fill>
 	</s:Rect>
+	
+	<s:TileGroup id="tiles"
+				 width="100%"
+				 height="100%"
+				 requestedColumnCount="2">
+		<s:Button id="b1"
+				  label="Button 1"
+				  width="100%"/>
+		<s:Button id="b2"
+				  label="Button 2"/>
+		<s:Button id="b3"
+				  label="Button 3"/>
+		<s:Button id="b4"
+				  label="Button 4"/>
+	</s:TileGroup>
 </s:Module>

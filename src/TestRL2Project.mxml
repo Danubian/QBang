@@ -15,5 +15,6 @@
 			<shell:AppConfig/>
 		</rl2:ContextBuilderTag>
 	</fx:Declarations>
-	<view:WidgetHolderView/>
+	
+	<view:HomeView/>
 </s:Application>

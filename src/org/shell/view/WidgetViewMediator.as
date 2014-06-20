@@ -9,7 +9,7 @@ package org.shell.view
 	public class WidgetViewMediator extends Mediator
 	{
 		[Inject]
-		public var view:ParentWidgetView;
+		public var view:ThemeWidgetView;
 		
 		override public function initialize():void
 		{

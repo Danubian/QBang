@@ -18,9 +18,12 @@
     <application path="TestRL2Project.mxml"/>
   </applications>
   <modules>
-    <module application="src/TestRL2Project.mxml" destPath="org/shell/view/ParentWidgetView.swf" optimize="true" sourcePath="src/org/shell/view/ParentWidgetView.mxml"/>
     <module application="src/TestRL2Project.mxml" destPath="org/shell/view/ChildWidgetView.swf" optimize="true" sourcePath="src/org/shell/view/ChildWidgetView.mxml"/>
+    <module application="src/TestRL2Project.mxml" destPath="org/shell/view/PlayerStatusView.swf" optimize="true" sourcePath="src/org/shell/view/PlayerStatusView.mxml"/>
+    <module application="src/TestRL2Project.mxml" destPath="org/shell/view/ThemeWidgetView.swf" optimize="true" sourcePath="src/org/shell/view/ThemeWidgetView.mxml"/>
     <module application="src/TestRL2Project.mxml" destPath="org/shell/view/WidgetShelfView.swf" optimize="true" sourcePath="src/org/shell/view/WidgetShelfView.mxml"/>
+    <module application="src/TestRL2Project.mxml" destPath="org/shell/view/FindGamesView.swf" optimize="true" sourcePath="src/org/shell/view/FindGamesView.mxml"/>
+    <module application="src/TestRL2Project.mxml" destPath="org/shell/view/InProgressGamesView.swf" optimize="true" sourcePath="src/org/shell/view/InProgressGamesView.mxml"/>
   </modules>
   <workers/>
   <buildCSSFiles/>
