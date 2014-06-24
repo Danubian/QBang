@@ -2,19 +2,30 @@
 <s:Rect xmlns:fx="http://ns.adobe.com/mxml/2009" 
 		xmlns:s="library://ns.adobe.com/flex/spark" 
 		xmlns:mx="library://ns.adobe.com/flex/mx"
+		implements="org.common.interfaces.IFillModule"
 		height="100%" 
-		width="100%" 
-		id="colorCanvas">
+		width="100%">
 	<fx:Declarations>
 		<!-- Place non-visual elements (e.g., services, value objects) here -->
 	</fx:Declarations>
+	<fx:Script>
+		<![CDATA[
+			public function setColor(color:int):void
+			{
+				rectFill.color = color;
+				rectStroke.color = color;
+			}
+		]]>
+	</fx:Script>
 	<s:stroke>
-		<s:SolidColorStroke id="stroke" 
-							color="#FF0000" 
+		<s:SolidColorStroke id="rectStroke" 
+							color="#000000" 
 							weight="2" 
 							alpha="1"/>
 	</s:stroke>
 	<s:fill>
-		<s:SolidColor id="fill"/>
+		<s:SolidColor id="rectFill"
+					  color="#000000"
+					  alpha="1"/>
 	</s:fill>
 </s:Rect>

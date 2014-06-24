@@ -5,7 +5,7 @@ package org.shell.model
 	import mx.modules.IModuleInfo;
 	import mx.modules.ModuleManager;
 	
-	import org.common.interfaces.IThemeModule;
+	import org.common.interfaces.IFillModule;
 	import org.shell.events.HomeModelEvent;
 	import org.utils.BaseActor;
 	import org.utils.NamedObjectMap;

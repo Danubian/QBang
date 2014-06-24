@@ -4,9 +4,7 @@ package org.shell
 	import flash.events.MouseEvent;
 	
 	//import org.shell.controller.OnHomeClickCommand;
-	import org.shell.controller.OnHomeDownCommand;
 	import org.shell.controller.OnHomeScrollCommand;
-	import org.shell.controller.OnHomeUpCommand;
 	//import org.shell.controller.OnMouseDownCommand;
 	import org.shell.model.HomeModel;
 	import org.shell.view.ChildWidgetView;
@@ -43,8 +41,8 @@ package org.shell
 //			commandMap.map(ScrollEvent.START_SCROLL, ScrollEvent).toCommand(OnScrollCommand);
 			//commandMap.map(MouseEvent.CLICK, MouseEvent).toCommand(OnHomeClickCommand);
 			//commandMap.map(MouseEvent.MOUSE_WHEEL, MouseEvent).toCommand(OnHomeScrollCommand);
-			commandMap.map(MouseEvent.MOUSE_DOWN, MouseEvent).toCommand(OnHomeDownCommand);
-			commandMap.map(MouseEvent.RIGHT_MOUSE_DOWN, MouseEvent).toCommand(OnHomeUpCommand);
+			commandMap.map(MouseEvent.MOUSE_DOWN, MouseEvent).toCommand(OnHomeScrollCommand);
+			commandMap.map(MouseEvent.RIGHT_MOUSE_DOWN, MouseEvent).toCommand(OnHomeScrollCommand);
 			
 //			commandMap.map(KeyboardEvent.KEY_UP, KeyboardEvent).toCommand(OnHomeUpCommand);
 //			commandMap.map(KeyboardEvent.KEY_DOWN, KeyboardEvent).toCommand(OnHomeDownCommand);

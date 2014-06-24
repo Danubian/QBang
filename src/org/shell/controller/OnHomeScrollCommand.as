@@ -2,9 +2,8 @@ package org.shell.controller
 {
 	import flash.events.MouseEvent;
 	
-	//import org.shell.view.ChildWidgetView;
+	import org.shell.model.HomeModel;
 	import org.shell.view.HomeView;
-	//import org.shell.view.ThemeWidgetView;
 	
 	import robotlegs.bender.bundles.mvcs.Command;
 
@@ -13,10 +12,27 @@ package org.shell.controller
 		[Inject]
 		public var event:MouseEvent;
 		
+		[Inject]
+		public var homeModel:HomeModel;
+		
+		private static const scroll:int = 30;
+		
 		override public function execute():void
 		{
 			trace("Inside OnHomeScrollCommand - execute")
-			trace("	MouseEvent : " + event)
+			trace("	MouseEvent : " + event.type)
+			if(event.type == MouseEvent.RIGHT_MOUSE_DOWN)
+			{
+				homeModel.y = homeModel.y - scroll;
+			} else if(event.type == MouseEvent.MOUSE_DOWN)
+			{
+				homeModel.y = homeModel.y + scroll;
+			} else {
+				trace("Event not found")
+			}
+			
+			//homeModel.y = homeModel.y + scrollDown;
+			//homeModel.createTheme("Second theme");
 		}
 	}
 }

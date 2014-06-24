@@ -1,8 +1,7 @@
 package org.common.interfaces
 {
-	public interface IThemeModule
+	public interface IFillModule
 	{
-		function setTitle(title:String):void;
 		function setColor(color:int):void;
 	}
 }
