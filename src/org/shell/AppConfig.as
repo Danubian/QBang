@@ -42,10 +42,9 @@ package org.shell
 //			commandMap.map(FileResultEvent.FILE_RESULT, FileResultEvent).toCommand(SetSelectedFileCommand);
 //			commandMap.map(ScrollEvent.START_SCROLL, ScrollEvent).toCommand(OnScrollCommand);
 			//commandMap.map(MouseEvent.CLICK, MouseEvent).toCommand(OnHomeClickCommand);
-			commandMap.map(MouseEvent.MOUSE_WHEEL, MouseEvent).toCommand(OnHomeScrollCommand);
+			//commandMap.map(MouseEvent.MOUSE_WHEEL, MouseEvent).toCommand(OnHomeScrollCommand);
 			commandMap.map(MouseEvent.MOUSE_DOWN, MouseEvent).toCommand(OnHomeDownCommand);
-			trace("MouseEvent.RIGHT_MOUSE_DOWN : " + MouseEvent.RIGHT_MOUSE_DOWN);
-			commandMap.map(MouseEvent.RIGHT_MOUSE_DOWN, MouseEvent).toCommand(OnHomeDownCommand);
+			commandMap.map(MouseEvent.RIGHT_MOUSE_DOWN, MouseEvent).toCommand(OnHomeUpCommand);
 			
 //			commandMap.map(KeyboardEvent.KEY_UP, KeyboardEvent).toCommand(OnHomeUpCommand);
 //			commandMap.map(KeyboardEvent.KEY_DOWN, KeyboardEvent).toCommand(OnHomeDownCommand);
